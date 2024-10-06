@@ -1,44 +1,44 @@
 # Helmet_Detection using YOLOv8
-First step :
-Create Python environment
-    > Python:Create Environment
-    > Choose : Python v. 3.7 --> 3.11 # if have error, try to use python version 3.8 
+First step : <br>
+Create Python environment<br>
+    > Python:Create Environment<br>
+    > Choose : Python v. 3.7 --> 3.11 # if have error, try to use python version 3.8 <br><br>
 
-First Command :
-    " .venv\Scripts\activate "
+First Command :<br>
+    " .venv\Scripts\activate "<br><br>
 
-Image Genarator :
-    - select your video
-    - change path in file img.py on line 17 to your folder which you select to save.
-    - use this command " pip install labelimg ultralytics " for install labelimg and cv2 framework.
-    - type " labelimg " in terminal for open labelimg framwork. 
-    - create folder label and change save label in this folder.
-    - change model for use to YOLO and create rectangle to helmet,
-    - when finished this process create dataset folder.
-    - in dataset folder, create images and labels folder.
-    - in images and labels folder, create training and validation folder.
-    - copy all datas classes and images and paste to training and validation folder.
-    - zip this file.
+Image Genarator :<br>
+    - select your video<br>
+    - change path in file img.py on line 17 to your folder which you select to save.<br>
+    - use this command " pip install labelimg ultralytics " for install labelimg and cv2 framework.<br>
+    - type " labelimg " in terminal for open labelimg framwork. <br>
+    - create folder label and change save label in this folder.<br>
+    - change model for use to YOLO and create rectangle to helmet,<br>
+    - when finished this process create dataset folder.<br>
+    - in dataset folder, create images and labels folder.<br>
+    - in images and labels folder, create training and validation folder.<br>
+    - copy all datas classes and images and paste to training and validation folder.<br>
+    - zip this file.<br><br>
 
-Train model(Colab) :
-    - upload zip file to your google drive
-    - open yolov8_trainmodel.ipynb in colab
-    - when conneted google drive, change path to your zip file and unzip it with code in colab
-    - create a new file name " data.yaml " in folder dataset and run
-    - when process was finished, check in folder runs\detect\train\weights
-    - download best.pt and last.pt to model folder
+Train model(Colab) :<br>
+    - upload zip file to your google drive<br>
+    - open yolov8_trainmodel.ipynb in colab<br>
+    - when conneted google drive, change path to your zip file and unzip it with code in colab<br>
+    - create a new file name " data.yaml " in folder dataset and run<br>
+    - when process was finished, check in folder runs\detect\train\weights<br>
+    - download best.pt and last.pt to model folder<br><br>
 
-Install framework libary : 
-    " pip install fastapi[standard] sqlalchemy scipy requests"
+Install framework libary : <br>
+    " pip install fastapi[standard] sqlalchemy scipy requests"<br><br>
 
-Run program :
-    " fastapi dev api.py "
-    " cd frontend "
-    " python -m http.server 8080 "
-    " python count.py "
+Run program :<br>
+    " fastapi dev api.py "<br>
+    " cd frontend "<br>
+    " python -m http.server 8080 "<br>
+    " python count.py "<br><br>
 
-Checking api server and dastboard:
-    " http://localhost:8000/docs "
-    " http://localhost:8000 "
+Checking api server and dastboard:<br>
+    " http://localhost:8000/docs "<br>
+    " http://localhost:8000 "<br><br>
 
 Thanks!!
